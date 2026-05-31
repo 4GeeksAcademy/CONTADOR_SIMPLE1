@@ -27,7 +27,7 @@ function renderApp() {
           
         </React.StrictMode>
       </div>
-    </div>
+    </div> 
   
 );
 }
