@@ -15,10 +15,8 @@ let seconds = 0;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-// render inicial
 root.render(<Home seconds={seconds} />);
 
-// contador
 setInterval(() => {
   seconds = seconds + 1;
 

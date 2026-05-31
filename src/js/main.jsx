@@ -18,19 +18,22 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 function renderApp() {
   root.render(
     <div className='container w-25 rounded-5 bg-secondary mt-3 p-3 pb-5 '>
-      <div className='rounded-5 2-25 mx-auto bg-dark mt-3 p-3 pb-5 text-success fs-1'>
+      <div className='container rounded-5 2-25 mx-auto bg-dark mt-3 p-3 pb-5 text-success fs-1 text-center'>
         <React.StrictMode>
-          <Home seconds={seconds} />
+          <div>
+      <i className="fa-regular fa-clock me-3"></i>
+      {seconds}
+    </div>
+          
         </React.StrictMode>
       </div>
     </div>
-  );
+  
+);
 }
 
-// primer render
 renderApp();
 
-// actualizar cada segundo
 setInterval(() => {
   seconds++;
   renderApp();
